@@ -1,33 +1,19 @@
+// Exemplo simples de interação via JavaScript
 document.addEventListener('DOMContentLoaded', () => {
-    const menuToggle = document.getElementById('menuToggle');
-    const navMenu = document.getElementById('navMenu');
-
-    if (menuToggle && navMenu) {
-        menuToggle.addEventListener('click', () => {
-            navMenu.classList.toggle('active');
+    console.log("Site MS Distribuidora carregado com sucesso!");
+    
+    // Suavidade na rolagem dos links do menu
+    const links = document.querySelectorAll('header nav ul li a');
+    links.forEach(link => {
+        link.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            if(targetId.startsWith('#')) {
+                e.preventDefault();
+                const targetSection = document.querySelector(targetId);
+                if(targetSection) {
+                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
         });
-
-        navMenu.querySelectorAll('a').forEach(link => {
-            link.addEventListener('click', () => {
-                navMenu.classList.remove('active');
-            });
-        });
-    }
-
-    const whatsappForm = document.getElementById('whatsappForm');
-    if (whatsappForm) {
-        whatsappForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-
-            const nome = document.getElementById('nome').value.trim();
-            const dispositivo = document.getElementById('dispositivo').value.trim();
-            const mensagem = document.getElementById('mensagem').value.trim();
-
-            const telefoneLoja = '5551998856614';
-            const texto = `Olá, VTech! Meu nome é *${nome}*.\n*Aparelho/Serviço:* ${dispositivo}\n*Detalhes:* ${mensagem}`;
-            const url = `https://wa.me/${telefoneLoja}?text=${encodeURIComponent(texto)}`;
-
-            window.open(url, '_blank');
-        });
-    }
+    });
 });
