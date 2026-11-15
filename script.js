@@ -1,37 +1,33 @@
-document.addEventListener("DOMContentLoaded", () => {
-  const menuToggle = document.getElementById("menuToggle");
-  const navLinks = document.getElementById("navLinks");
+document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.getElementById('menuToggle');
+    const navMenu = document.getElementById('navMenu');
 
-  if (menuToggle && navLinks) {
-    menuToggle.addEventListener("click", () => {
-      navLinks.classList.toggle("active");
-    });
+    if (menuToggle && navMenu) {
+        menuToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
 
-    navLinks.querySelectorAll("a").forEach(link => {
-      link.addEventListener("click", () => {
-        navLinks.classList.remove("active");
-      });
-    });
-  }
+        navMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+            });
+        });
+    }
 
-  const contactForm = document.getElementById("contactForm");
-  const formFeedback = document.getElementById("formFeedback");
+    const whatsappForm = document.getElementById('whatsappForm');
+    if (whatsappForm) {
+        whatsappForm.addEventListener('submit', (e) => {
+            e.preventDefault();
 
-  if (contactForm) {
-    contactForm.addEventListener("submit", (e) => {
-      e.preventDefault();
-      const nome = document.getElementById("nome").value.trim();
-      const aparelho = document.getElementById("aparelho").value;
-      const mensagem = document.getElementById("mensagem").value.trim();
+            const nome = document.getElementById('nome').value.trim();
+            const dispositivo = document.getElementById('dispositivo').value.trim();
+            const mensagem = document.getElementById('mensagem').value.trim();
 
-      const textoWhatsApp = encodeURIComponent(
-        `Olá, VTech! Meu nome é ${nome}. Gostaria de informações sobre: ${aparelho}. Detalhes: ${mensagem}`
-      );
-      const numeroLoja = "5551998856614";
+            const telefoneLoja = '5551998856614';
+            const texto = `Olá, VTech! Meu nome é *${nome}*.\n*Aparelho/Serviço:* ${dispositivo}\n*Detalhes:* ${mensagem}`;
+            const url = `https://wa.me/${telefoneLoja}?text=${encodeURIComponent(texto)}`;
 
-      formFeedback.textContent = "Redirecionando para o WhatsApp da VTech Arroio do Meio...";
-      window.open(`https://wa.me/${numeroLoja}?text=${textoWhatsApp}`, "_blank");
-      contactForm.reset();
-    });
-  }
+            window.open(url, '_blank');
+        });
+    }
 });
