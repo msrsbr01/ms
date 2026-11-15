@@ -1,17 +1,17 @@
-// Exemplo simples de interação via JavaScript
-document.addEventListener('DOMContentLoaded', () => {
-    console.log("Site MS Distribuidora carregado com sucesso!");
+// Interatividade básica para o site
+document.addEventListener("DOMContentLoaded", () => {
+    console.log("MS Distribuidora carregada com sucesso!");
     
-    // Suavidade na rolagem dos links do menu
-    const links = document.querySelectorAll('header nav ul li a');
+    // Suave rolagem para âncoras internas
+    const links = document.querySelectorAll('nav a, .hero a');
     links.forEach(link => {
         link.addEventListener('click', function(e) {
-            const targetId = this.getAttribute('href');
-            if(targetId.startsWith('#')) {
+            const href = this.getAttribute('href');
+            if (href.startsWith('#')) {
                 e.preventDefault();
-                const targetSection = document.querySelector(targetId);
-                if(targetSection) {
-                    targetSection.scrollIntoView({ behavior: 'smooth' });
+                const target = document.querySelector(href);
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
                 }
             }
         });
