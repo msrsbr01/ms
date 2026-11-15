@@ -1,90 +1,203 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <charset="UTF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MS Distribuidora - Sua melhor escolha</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cloudflare.com">
+    <title>MS Distribuidora | Tecnologia e Acessórios para Lojistas</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Cabeçalho -->
-    <header>
-        <div class="logo">
-            <h1>MS <span>Distribuidora</span></h1>
+    <header class="header">
+        <div class="container header-content">
+            <a href="#inicio" class="logo">
+                <span class="logo-badge">MS</span>
+                <span class="logo-text">MS <span class="highlight">DISTRIBUIDORA</span></span>
+            </a>
+
+            <nav class="nav" id="nav-menu">
+                <a href="#inicio">Início</a>
+                <a href="#produtos">Produtos</a>
+                <a href="#sobre">Sobre Nós</a>
+                <a href="#depoimentos">Depoimentos</a>
+                <a href="#contato">Contato</a>
+            </nav>
+
+            <a href="https://wa.me/5551991364247?text=Ol%C3%A1!%20Vim%20pelo%20site%20e%20gostaria%20de%20conhecer%20o%20cat%C3%A1logo%20para%20lojistas." target="_blank" class="btn btn-primary btn-sm">
+                Área do Lojista
+            </a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#inicio">Início</a></li>
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#produtos">Produtos</a></li>
-                <li><a href="#instagram">Instagram</a></li>
-                <li><a href="#contato">Contato</a></li>
-            </ul>
-        </nav>
     </header>
 
-    <!-- Seção Principal (Hero) -->
     <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h2>Qualidade e Agilidade em Distribuição</h2>
-            <p>Atendemos sua empresa com os melhores produtos e condições do mercado.</p>
-            <a href="#contato" class="btn-principal">Fale Conosco</a>
-        </div>
-    </section>
-
-    <!-- Sobre -->
-    <section id="sobre" class="container">
-        <h2>Sobre a MS Distribuidora</h2>
-        <p>Somos referência no mercado, garantindo excelência, compromisso e rapidez na entrega para todos os nossos parceiros e clientes.</p>
-    </section>
-
-    <!-- Produtos -->
-    <section id="produtos" class="container bg-light">
-        <h2>Nossos Produtos</h2>
-        <div class="grid-produtos">
-            <div class="card">
-                <i class="fa-solid fa-box-open"></i>
-                <h3>Categoria 1</h3>
-                <p>Descrição breve do produto ou linha de distribuição.</p>
-            </div>
-            <div class="card">
-                <i class="fa-solid fa-truck-fast"></i>
-                <h3>Categoria 2</h3>
-                <p>Descrição breve do produto ou linha de distribuição.</p>
-            </div>
-            <div class="card">
-                <i class="fa-solid fa-handshake"></i>
-                <h3>Categoria 3</h3>
-                <p>Descrição breve do produto ou linha de distribuição.</p>
+        <div class="container">
+            <div class="hero-content">
+                <span class="badge">Atacado Exclusivo para Lojistas no RS</span>
+                <h1>Sua loja de eletrônicos merece <span class="gradient-text">nossa tecnologia.</span></h1>
+                <p>Produtos de última geração, películas de alta resistência e excelente custo-benefício com entrega rápida em todo o Rio Grande do Sul.</p>
+                <div class="hero-actions">
+                    <a href="https://wa.me/5551991364247?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20o%20cat%C3%A1logo." target="_blank" class="btn btn-primary">
+                        Solicitar Catálogo no WhatsApp &rarr;
+                    </a>
+                    <a href="#produtos" class="btn btn-secondary">
+                        Conhecer Diferenciais
+                    </a>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Integração Instagram -->
-    <section id="instagram" class="container instagram-section">
-        <h2>Siga-nos no Instagram</h2>
-        <p>Acompanhe nossas novidades e promoções em tempo real: <a href="https://instagram.com" target="_blank">@msdistribuidora</a></p>
-        <div class="insta-grid">
-            <div class="insta-post"><i class="fa-brands fa-instagram"><span>Post 1</span></i></div>
-            <div class="insta-post"><i class="fa-brands fa-instagram"><span>Post 2</span></i></div>
-            <div class="insta-post"><i class="fa-brands fa-instagram"><span>Post 3</span></i></div>
-            <div class="https://www.instagram.com/reel/Db5yUzYvgVe/?srtk=MWMyaGx1OWllN2pxdA=="><i class="https://www.instagram.com/reel/Db5yUzYvgVe/?srtk=MWMyaGx1OWllN2pxdA=="><span>https://www.instagram.com/reel/Db5yUzYvgVe/?srtk=MWMyaGx1OWllN2pxdA==</span></i></div>
+    <section class="highlights">
+        <div class="container">
+            <div class="grid-3 highlights-box">
+                <div class="card">
+                    <div class="icon-box">&#9733;</div>
+                    <h3>Qualidade Garantida</h3>
+                    <p>Produtos de altíssima qualidade, rigorosamente selecionados para superar as expectativas da sua loja e dos seus clientes.</p>
+                </div>
+
+                <div class="card">
+                    <div class="icon-box">&#9881;</div>
+                    <h3>Tecnologia de Ponta</h3>
+                    <p>Tecnologia de última geração e as últimas novidades do mercado de acessórios eletrônicos com excelente custo-benefício.</p>
+                </div>
+
+                <div class="card card-accent">
+                    <div class="icon-box icon-box-light">&#9889;</div>
+                    <h3>Entrega em 48 Horas</h3>
+                    <p><strong>Frete grátis acima de R$ 300,00</strong> para Vale do Taquari, Capital, Serra Gaúcha, Missões, Planalto e Região Noroeste (demais regiões sob consulta).</p>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- Rodapé / Contato -->
-    <footer id="contato">
-        <p>&copy; 2023 MS Distribuidora. Todos os direitos reservados.</p>
-        <p>Contato: (51) 99999-9999 | contato@msdistribuidorars.com.br</p>
+    <section id="produtos" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Principais Linhas de Produtos</h2>
+                <p>Credibilidade e confiança para abastecer o estoque da sua loja com itens de alto giro.</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="product-card">
+                    <div class="product-icon">&#128241;</div>
+                    <h3>Películas de Proteção</h3>
+                    <p>Linha completa de películas de alta resistência e tecnologia avançada para diversos modelos de smartphones.</p>
+                    <a href="https://wa.me/5551991364247?text=Ol%C3%A1!%20Quero%20saber%20mais%20sobre%20as%20pel%C3%ADculas." target="_blank" class="link-arrow">Consultar modelos &rsaquo;</a>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-icon">&#128268;</div>
+                    <h3>Acessórios Eletrônicos</h3>
+                    <p>Cabos, carregadores, fones e periféricos selecionados com foco em durabilidade e alta margem de lucro para o lojista.</p>
+                    <a href="https://wa.me/5551991364247?text=Ol%C3%A1!%20Quero%20ver%20a%20linha%20de%20acess%C3%B3rios." target="_blank" class="link-arrow">Ver catálogo completo &rsaquo;</a>
+                </div>
+
+                <div class="product-card product-card-dark">
+                    <div>
+                        <span class="tag-small">Exclusivo CNPJ / Lojista</span>
+                        <h3>Abasteça sua loja hoje</h3>
+                        <p>Conte com suporte dedicado da nossa equipe comercial para escolher os melhores produtos para a sua região.</p>
+                    </div>
+                    <a href="https://wa.me/5551991364247" target="_blank" class="btn btn-primary btn-full">Falar com Consultor</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="section section-dark">
+        <div class="container">
+            <div class="section-header-left">
+                <span class="tag-small">Quem Somos</span>
+                <h2>Credibilidade e confiança para impulsionar o seu negócio</h2>
+                <p>Construímos parcerias sólidas com lojistas em todo o Rio Grande do Sul.</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="about-card">
+                    <h3>Missão</h3>
+                    <p>Oferecer os melhores produtos, marcas e suporte contínuo para impulsionar o crescimento do seu negócio.</p>
+                </div>
+
+                <div class="about-card">
+                    <h3>Visão</h3>
+                    <p>Ser uma referência de excelência no mercado B2B, construindo parcerias duradouras focadas em rentabilidade e responsabilidade.</p>
+                </div>
+
+                <div class="about-card">
+                    <h3>Valores</h3>
+                    <p>Comprometimento, ética, respeito, inovação, diversidade e alto padrão de qualidade em cada entrega.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="depoimentos" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2>O que dizem nossos parceiros</h2>
+                <p>Lojistas de diversas regiões do estado que confiam na MS Distribuidora.</p>
+            </div>
+
+            <div class="grid-3">
+                <div class="testimonial-card">
+                    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="quote">"Excelentes produtos e atendimento de primeira. Recomendo com certeza!"</p>
+                    <div class="author">
+                        <strong>Joaquim</strong>
+                        <span>Bento Gonçalves / RS</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="quote">"Ótimo atendimento e parceria duradoura. A MS é referência no estado!"</p>
+                    <div class="author">
+                        <strong>Taís</strong>
+                        <span>Lajeado / RS</span>
+                    </div>
+                </div>
+
+                <div class="testimonial-card">
+                    <div class="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+                    <p class="quote">"Produtos de altíssima qualidade e total profissionalismo. Recomendo!"</p>
+                    <div class="author">
+                        <strong>Henrique</strong>
+                        <span>Santa Cruz do Sul / RS</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="cta-banner">
+        <div class="container cta-content">
+            <div>
+                <h2>Pronto para fazer seu pedido?</h2>
+                <p>Entre em contato com nossa equipe comercial ou acompanhe as novidades no Instagram.</p>
+            </div>
+            <div class="cta-buttons">
+                <a href="https://wa.me/5551991364247" target="_blank" class="btn btn-white">
+                    WhatsApp: (51) 99136-4247
+                </a>
+                <a href="https://instagram.com/msdistribuidorars" target="_blank" class="btn btn-outline-light">
+                    Instagram: @msdistribuidorars
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container footer-content">
+            <div class="footer-brand">MS DISTRIBUIDORA</div>
+            <div>&copy; 2026 msdistribuidorars.com.br — Todos os direitos reservados.</div>
+        </div>
     </footer>
 
-    <!-- Botão Flutuante WhatsApp -->
-    <a href="https://wa.me." class="whatsapp-float" target="_blank" title="Fale conosco no WhatsApp">
-        <i class="fa-brands fa-whatsapp"></i>
+    <a href="https://wa.me/5551991364247?text=Ol%C3%A1!%20Podemos%20conversar?" target="_blank" class="whatsapp-float" title="Abrir bate-papo no WhatsApp">
+        WhatsApp
     </a>
 
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
